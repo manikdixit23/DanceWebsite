@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+html
+  head
+    title Manik's Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+          div#logo
+            img(src="/static/img/logo.png")
+            | MDA
+          li #[a(href='/') Home]
+          li #[a(href='/') Services]
+          li #[a(href='/') About Us]
+          li #[a(href='/') Class Info]
+          li #[a(href='/') Contact Us]
+
+    section#introSection 
+        div Welcome to Manik's Dance Academy
+        div.small Eat Dance Sleep Repeat
+
+    section#missionSection 
+        h2 Our Mission
+        div.card
+          h3 Dance Perfection
+          div.card-box 
+            div.card-img
+              img(src='/static/img/danc1.jpg')
+            div.card-content
+              p This is the best dance academy of the universe
+
+        div.card
+          h3 Dance the way you like
+          div.card-box 
+            div.card-img
+              img(src='/static/img/danc2.jpg')
+            div.card-content
+              p Transforming your health lifestyle
+
+        div.card
+          h3 Expert Teaching
+          div.card-box 
+            div.card-img
+              img(src='/static/img/danc3.jpg')
+            div.card-content
+              p Groove to new tunes each week
+
+    section#sponsorsSection 
+        h2 Our Sponsors
+        div#sponsors
+          img(src="/static/img/dell.png", alt="Sponsor Image", Class='spImage')
+          img(src="/static/img/asus.png", alt="Sponsor Image", Class='spImage')
+          img(src="/static/img/hp.png", alt="Sponsor Image", Class='spImage')
+          img(src="/static/img/lenovo.png", alt="Sponsor Image", Class='spImage')
+
+    footer#footer 
+        | Copyright &copy 2021 www.manikdanceacademy.com | All rights reserved
+
+    script
+      include ../static/index.js
